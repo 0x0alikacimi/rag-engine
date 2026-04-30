@@ -43,7 +43,7 @@ Answer + Citations
 ### 1. Clone & create environment
 
 ```bash
-git clone <repo>
+git clone <repo> lexrag
 cd lexrag
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
