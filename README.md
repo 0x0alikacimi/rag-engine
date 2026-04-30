@@ -6,34 +6,34 @@ A fully local, production-grade Retrieval-Augmented Generation system for legal 
 
 ```text
 Documents (PDF/DOCX/TXT)
-│
-▼
+	│
+	▼
 DocumentLoader → LegalChunker (structure-aware)
-│                │
-│          parent/child chunks
-▼
+	│                │
+	│          parent/child chunks
+	▼
 MetadataStore (SQLite)
-│
-▼
+	│
+	▼
 Embedder (BGE) ──────────► FAISSIndex (HNSW)
 BM25Index ◄──────────────────────┘
-│
-▼
+	│
+	▼
 HybridRetriever (RRF fusion)
-│
-▼
+	│
+	▼
 CrossEncoderReranker
-│
-▼
+	│
+	▼
 ParentChunkExpander
-│
-▼
+	│
+	▼
 ContextSelector (token budget)
-│
-▼
+	│
+	▼
 PromptBuilder → LocalLLM (llama.cpp)
-│
-▼
+	│
+	▼
 Answer + Citations
 
 ```
