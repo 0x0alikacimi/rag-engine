@@ -3,6 +3,8 @@
 A fully local, production-grade Retrieval-Augmented Generation system for legal documents.
 
 ## Architecture
+
+```text
 Documents (PDF/DOCX/TXT)
 │
 ▼
@@ -33,6 +35,8 @@ PromptBuilder → LocalLLM (llama.cpp)
 │
 ▼
 Answer + Citations
+
+```
 
 ## Installation
 
