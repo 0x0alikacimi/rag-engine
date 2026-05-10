@@ -55,10 +55,10 @@ class PromptBuilder:
                     doc_name=doc_name,
                     section=section,
                     chunk_id=chunk_id,
+                    text=text,
                 )
-                + "\n"
-                + text
             )
+
             citations.append(
                 {
                     "index": i,
